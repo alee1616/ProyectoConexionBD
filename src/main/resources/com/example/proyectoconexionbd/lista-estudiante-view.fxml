@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="396.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoconexionbd.controller.EstudianteController">
+    <children>
+        <Label layoutX="250.0" layoutY="25.0" text="Listado de Estudiantes">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblListaEstudiante" layoutX="14.0" layoutY="60.0" prefHeight="250.0" prefWidth="770.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="colNombre" prefWidth="90.0" text="Nombre" />
+                <TableColumn fx:id="colCorreo" prefWidth="120.0" text="Correo" />
+                <TableColumn fx:id="colCarrera" prefWidth="130.0" text="Carrera" />
+                <TableColumn fx:id="colTelefono" prefWidth="80.0" text="Teléfono" />
+                <TableColumn fx:id="colEdad" prefWidth="50.0" text="Edad" />
+                <TableColumn fx:id="colFechaIngreso" prefWidth="100.0" text="F. Ingreso" />
+                <TableColumn fx:id="colPromedio" prefWidth="80.0" text="Promedio" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnCargarEstudiante" layoutX="330.0" layoutY="330.0" mnemonicParsing="false" onAction="#cargarEstudiantes" text="Cargar Estudiantes" />
+    </children>
+</AnchorPane>
